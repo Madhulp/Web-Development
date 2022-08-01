@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIKE AND DISLIKE</title>
+    <style>
+        #image {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 35%;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #likes {
+            margin-top: 50px;
+        }
+
+        #button {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        button {
+            padding: 15px 25px;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        #button>button:nth-child(1) {
+            background-color: green;
+        }
+
+
+        #button>button:nth-child(2) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image">
+        <img
+            src="http://www.thecanvasfactory.com.au/blog/wp-content/uploads/sites/3/cat-photos-seasons-autumn-min.jpg" />
+    </div>
+    <div id="likes">
+        <h3>Like -:<span id="like">0</span></h3>
+        <h3>Dislike -:<span id="dislike">0</span></h3>
+    </div>
+    <div id="button">
+        <button>Like</button>
+        <button>Dislike</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let likeCount = 0;
+    let dislikeCount = 0;
+    document.querySelector("#button>button").addEventListener("click", likeFunc);
+    function likeFunc() {
+        document.querySelector("#like").innerText = likeCount++;
+        localStorage.setItem()
+    }
+
+    document.querySelector("button+button").addEventListener("click", dislikeFunc);
+    function dislikeFunc() {
+        document.querySelector("#dislike").innerText = dislikeCount++;
+    }
+</script>

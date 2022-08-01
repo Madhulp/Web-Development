@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BUTTONS WITHOUT DOM</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #container {
+            border: 1px solid black;
+            width: 100%;
+            height: 160px;
+            margin-top: 220px;
+            background-color: white;
+        }
+
+        #card {
+            width: 95%;
+            height: 70px;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #card>div {
+            display: flex;
+            width: 10%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #card>div:nth-child(1) {
+            background-color: #017cff;
+        }
+
+        #card>div:nth-child(2) {
+            background-color: #6c757d;
+        }
+
+        #card>div:nth-child(3) {
+            background-color: #27a845;
+        }
+
+        #card>div:nth-child(4) {
+            background-color: #db3545;
+        }
+
+        #card>div:nth-child(5) {
+            background-color: #ffc008;
+            color: #2b2c29
+        }
+
+        #card>div:nth-child(6) {
+            background-color: #14a2b8;
+        }
+
+        #card>div:nth-child(7) {
+            color: #2b2c29
+        }
+
+        #card>div:nth-child(8) {
+            background-color: #343a3e;
+
+        }
+        
+        #card>div:nth-child(9) {
+            color: #14a2b8;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="card">
+            <div>Primary</div>
+            <div>Secondary</div>
+            <div>Success</div>
+            <div>Danger</div>
+            <div>Warning</div>
+            <div>Info</div>
+            <div>Light</div>
+            <div>Dark</div>
+            <div>Link</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 150px);
+            gap: 20px;
+            grid-template-areas:
+                "rd rd gr"
+                "rd rd grn"
+                "rd rd gre"
+        }
+
+        h1 {
+            background-color: yellow;
+            width: 90%;
+            height: 80px;
+        }
+
+
+
+        #container>div:nth-child(1) {
+            grid-area: rd;
+            background-color: red;
+        }
+
+        #container>div:nth-child(2) {
+            grid-area: rd;
+            background-color: red;
+        }
+
+        #container>div:nth-child(3) {
+            grid-area: gr;
+            background-color: green;
+        }
+
+        #container>div:nth-child(4) {
+            grid-area: rd;
+            background-color: red;
+        }
+
+        #container>div:nth-child(5) {
+            grid-area: rd;
+            background-color: red;
+        }
+
+        #container>div:nth-child(6) {
+            grid-area: grn;
+            background-color: green;
+        }
+
+        #container>div:nth-child(7) {
+            grid-area: rd;
+            background-color: red;
+        }
+
+        #container>div:nth-child(8) {
+            grid-area: rd;
+            background-color: red;
+        }
+
+        #container>div:nth-child(9) {
+            grid-area: gre;
+            background-color: green;
+        }
+
+        @media all and (min-width:481px) and (max-width:768px) {
+            #container {
+                display: grid;
+            grid-template-areas:
+                "rd rd rd"
+                "rd rd rd"
+                "gr gre grn"
+        }
+        }
+
+        @media all and (min-width:320px) and (max-width:480px) {
+            #container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 100px);
+            gap: 20px;
+            grid-template-areas:
+                "rd"
+                "rd"
+                "gr"
+                "gre"
+                "grn"
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Navigation</h1>
+    </div>
+    <div id="container">
+        <div id="box">Left Box</div>
+        <div></div>
+        <div>Right Box 1</div>
+        <div></div>
+        <div></div>
+        <div>Right Box 2</div>
+        <div></div>
+        <div></div>
+        <div>Right Box 3</div>
+    </div>
+
+</body>
+
+</html>

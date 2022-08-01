@@ -1,0 +1,103 @@
+* body {
+    background-color: rgb(251, 249, 250);
+}
+
+#navbar {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+
+}
+
+#navbar>div {
+    border: 1px solid transparent;
+    width: 40%;
+
+
+
+
+
+}
+
+h2 {
+    color: #3973b6;
+}
+
+#navbar>h2 {
+    color: black;
+}
+
+#create>h1 {
+    text-align: center;
+    border: 1px solid transparent;
+    height: 40px;
+    width: 100%;
+    padding: 0px;
+
+    font-size: 30px;
+    color: black;
+
+}
+
+#create {
+    text-align: center;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 28%;
+    height: 500px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+
+}
+
+form {
+    border: 1px solid transparent;
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 15px;
+
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: rgb(128, 128, 128);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3973b6;
+}
+
+#create>label {
+    text-align: left;
+    margin-left: 0px;
+}
+
+#navbar>div>a {
+    text-decoration: underline;
+}
